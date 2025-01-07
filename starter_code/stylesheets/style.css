@@ -56,8 +56,18 @@ nav>div>button {
     width: 7vh;
 }
 
-ul {
+header>ul {
     display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul>li>p span {
+    color: #540b51;
+    font-size: 10vh;
+    font-family: helvetica;
 }
 
 header {
@@ -72,7 +82,7 @@ header {
     min-height: 100vh;
     /* Make header take full viewport height */
     box-sizing: border-box;
-    padding: 20px;
+    padding: 10px;
 }
 
 header>div {
@@ -119,4 +129,49 @@ header button img {
     width: 24px;
     height: auto;
     flex-shrink: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main>section:first-child div>img {
+    width: 40%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+main>section:first-child {
+    background-color: rgb(219, 208, 194);
+}
+
+main section {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center the text horizontally */
+    justify-content: center;
+    /* Center the text vertically */
+    text-align: center;
+    /* Center the text itself */
+    width: 100%;
+    margin: 5vh;
+}
+
+h3 {
+    color: #540b51;
+    font-size: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 2vh;
+    text-align: center;
+    /* Ensure text in h3 is centered */
+}
+
+p {
+    text-align: center;
+    /* Ensure the paragraph text is centered */
 }
