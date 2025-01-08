@@ -168,9 +168,19 @@ main {
 }
 
 main>section:first-child div>img {
-    width: 40%;
-    height: auto;
-    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    oject-fitlex-shrink: 0;
+    object-fit: contain;
+}
+
+section img {
+    width: 100px;
+    /* Set the desired width */
+    height: 100px;
+    /* Set the desired height */
+    object-fit: contain;
+    /* Ensure the images maintain their aspect ratio */
 }
 
 main>section:first-child {
