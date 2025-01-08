@@ -19,11 +19,12 @@ body {
 }
 
 body nav {
+    box-sizing: border-box;
     background: #540b51;
     display: flex;
     flex-direction: row;
     align-items: center;
-    align-content: space-between;
+    justify-content: space-between;
     flex-grow: 1;
     width: 100%;
 }
@@ -120,9 +121,10 @@ header>div {
     gap: 20px;
 }
 
-header button {
+header button:nth-child(1) {
+    width: 98%;
     margin: 10px;
-    padding: 10px 20px;
+    margin-right: 20px;
     background-color: #bfc4cd;
     color: white;
     border: none;
@@ -231,4 +233,11 @@ footer>ul:nth-of-type(2) {
 
 .fab {
     height: 10px;
+}
+
+
+@media screen and (min-width: 600px)and (max-width: 1024) {
+    header {
+        flex-direction: row;
+    }
 }
